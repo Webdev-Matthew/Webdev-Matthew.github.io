@@ -470,6 +470,7 @@ html {
         width: 100%;
         z-index: 3;
         margin-left: -1.6%;
+        margin-bottom: 5px;
       }
       
       .navigation-oben ul {
