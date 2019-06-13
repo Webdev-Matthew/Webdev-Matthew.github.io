@@ -24,10 +24,10 @@
 		<input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 		<ul class="menu">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#aboutme">About me</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a class="nav-link" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="#aboutme">About me</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 	<script>
@@ -59,7 +59,12 @@
 			}else {
 				$(".main-content").css("margin-top", "7rem");
 			}
-		})
+		});
+	</script>
+	<script>
+		$(".nav-link").on('click', function() {
+			document.getElementById("menu-btn").checked = false;
+		});
 	</script>
 	<!--<script>
 		var prevScrollpos = window.pageYOffset;
