@@ -500,6 +500,7 @@ html {
         transition: max-height .2s ease-out;
         color: black;
         background-color: black;
+        width: 100%;
       }
       
       /* menu icon */
