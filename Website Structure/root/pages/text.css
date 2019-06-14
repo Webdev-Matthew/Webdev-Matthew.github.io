@@ -578,6 +578,15 @@ and (max-width: 479px) {
     #aboutme > th,td {
         font-size: 15px;
     }
+    .btn {
+        background: black;
+        text-align: center;
+        padding: 30px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
 }
 @media screen and (width: 320px) {
     #contact > h2 {
@@ -603,5 +612,14 @@ and (max-width: 479px) {
 @media screen and (max-width: 479px) {
     #contact > h2 {
         margin-top: 150px;
+    }
+    .btn {
+        background: black;
+        text-align: center;
+        padding: 30px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
     }
 }
