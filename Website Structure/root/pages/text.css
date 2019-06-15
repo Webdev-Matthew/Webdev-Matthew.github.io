@@ -17,6 +17,7 @@ html {
     box-sizing: border-box;
     background-color: black;
     z-index: 99;
+    left: 0;
 }
 .navigation-oben ul {
     display: block;
