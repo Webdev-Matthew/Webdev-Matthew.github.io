@@ -407,6 +407,7 @@ html {
     #contact > h2 {
         margin-top: -15px;
         font-size: 40px;
+        padding-top: 10px;
     }
     .project > img {
         width: 300px;
@@ -415,9 +416,11 @@ html {
     }
     .projects > h2 {
         font-size: 40px;
+        padding-top: 10px;
     }
     #aboutme > h2 {
         font-size: 40px;
+        padding-top: 10px;
     }
     #aboutme > p {
         font-size: 20px;
@@ -613,6 +616,7 @@ and (max-width: 479px) {
 @media screen and (max-width: 479px) {
     #contact > h2 {
         margin-top: 150px;
+        padding-top: 10px;
     }
     .btn {
         background: black;
@@ -622,5 +626,13 @@ and (max-width: 479px) {
         color: #fff;
         cursor: pointer;
         text-transform: uppercase;
+    }
+    .projects > h2 {
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    #aboutme > h2 {
+        font-size: 40px;
+        padding-top: 10px;
     }
 }
