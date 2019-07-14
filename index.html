@@ -35,7 +35,6 @@
 			$("a").on('click', function (event) {
 				if (this.hash !== "") {
 					event.preventDefault();
-
 					var hash = this.hash;
 					var scrolleBis = 0;
 					if (hash !== "#home") {
@@ -155,7 +154,7 @@
 				<p>If you want to send me an email directly, just fill out the form
 					down below.
 				</p>
-				<form action="mailto:ydev.coding@gmail.com?subject=Website">
+				<form action="mailto:ydev.coding@gmail.com?subject=Website" name="idee" onsubmit="checkAdress">
 				<div class="contact-form">
 						<div class="input-fields">
 						  <input type="text" class="input" placeholder="Name" name="name">
@@ -167,6 +166,19 @@
 						</div>
 					</div>
 				</form>
+				<script>
+					function checkAdress() {
+						var f = document.idee;
+						for(var i = 0; i < f.elements.length; i++) {
+							if(f.elements[i].type != "text") continue;
+							var text = f.elements[i].value;
+							if(text == null || text.length == 0) {
+								alert("Please fill in the formular.");
+								return false;
+							}
+						}
+					}
+				</script>
 
 			</div>
 			<div id="unten">
